@@ -56,7 +56,7 @@ const postPlant = async (req, res)=>{
 
 const getPlants = async (req, res)=>{
     
-    for(let i=0; i<9999999; i++){}
+    // for(let i=0; i<9999999; i++){}
     const allPlants = await Plant.find()
 
     res.json({
