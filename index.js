@@ -185,6 +185,12 @@ app.delete("/plant/:id",(req, res)=>{
          })
 })
 
+app.use("*", (req, res)=>{
+    res.send(`<div>
+     <h1 style="text-align:center;"> 404 not found</h1>
+    </div> 
+`)
+})
 
 const PORT = process.env.PORT
 
